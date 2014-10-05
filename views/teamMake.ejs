@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/TeamMake.css" media="all" />      
+    <!--<link rel="stylesheet" type="text/css" href="http://leanmodal.finelysliced.com.au/css/style.css" media="all" />-->      
+    <script src="/socket.io/socket.io.js"></script>  
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>     
+</head>
+<body>
+    <!--<div class="sukudai">
+        -- 수정 사항 | 
+        티편성의 조작은 기본 관리자가 한다. | http://bcho.tistory.com/897 | 채팅창 입력 많이 되면 스크롤 동작이 이상해진다  |
+        게임수에 맞게 팀이 만들어져야 한다. 한팀당 최소 5명 최대 7명. 10명~14명 2팀, 15명이상 3팀
+    </div>-->    
+    <div id="div787">
+        <div id="memberName">
+            <input  style="text-align:center;" type="text" name="m_name"  id="m_name" placeholder="이름을 입력 해주세요." />
+            <div class="errorMsg"></div>
+        </div>
+    </div>
+   <div class="jqmOverlay" style="height: 100%; width: 100%; position: fixed; left: 0px; top: 0px; z-index: 2999; opacity: 0.5;"></div>
+    <div class="all">
+            <div class="main">
+                <div class="wrap">                    
+                    <!--<div class="header futsalHeadImg"></div>-->
+                    <div><img src="./images/f.jpg" alt="futsal" /></div>
+                    <div id="teamMakingView"></div>
+                    <div id="teamArea">
+                        <!--<div class="teamSelect">
+                            <dl>
+                                <dt>Group A</dt>
+                                <dd><span>김형철</span></dd>
+                                <dd><span>박현덕</span></dd>
+                                <dd><span>최지훈</span></dd>
+                                <dd><span>문호석</span></dd>
+                                <dd><span>박중민</span></dd>
+                                <dd><span>유헤이</span></dd>
+                            </dl>
+                       </div>-->                       
+                    </div>
+                    <div class="teamArea2">                        
+                        <div id="teamLeftArea">
+                            <!--<div class="jqmOverlay2" style="height: 100%; width: 100%; position: absolute; left: 0px; top: 0px; z-index: 2999; opacity: 0.5; display:block;"></div>-->
+                            <div id="memberList">
+                                <div id="memberView">
+                                    <p class="memberViewTitle"></p>
+                                    <ul class="gameOnList">
+                                      <!--<li id='gl_1'>김형철</li>-->                               
+                                    </ul>
+                                </div>
+                                <div id="addMember">                                
+                                    <table id="selectTable" onclick="test4();"> 
+                                        <tr> 
+                                            <td class="selectTd1">시합 멤버를 선택해 주세요</td> 
+                                            <td class="selecTd2"><img src='http://www.sgs.com/images/selectbox_arrow_modal.png' style="width:20px;"></td> 
+                                        </tr> 
+                                    </table> 
+                                    <div id='selectDiv'> 
+                                        <div id="qoo10fcMemberList">
+                                            <!--<input type='checkbox' name='member_list' value='1' id="choijh"><label for="choijh">&nbsp;최지훈</label><br>--> 
+                                        </div>
+                                        <div id="memberBtn">
+                                            <a href="#" id="memberInsert" class="button" >등록</a>
+                                            <a href="#" id="memberDelete" class="button" >삭제</a>
+                                            <a href="#" id="allCheck" class="button" onclick="allSelect(); return false;">전체 선택</a>
+                                            <a href="#" id="allDelete" class="button" onclick="allDeSelect(); return false;">전체 해제</a>
+                                        </div>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div id="teamRightArea">
+                            <div id="inputCommentArea">
+                                <div id="chatArea">
+                                    <ul class="chatList" id="chatRealArea">
+                                        <!--<li><span class="chatName">김형철 : </span><span class="chatMsg">빨리 시작하죠</span></li>-->
+                                    </ul>
+                                </div>
+                                <div id="chatMemberList">
+                                    <p class="ListTitle">채팅 참가인원</p>
+                                    <ul class="chatMemberNametList">
+                                    </ul>
+                                </div>                         
+					            <textarea id="add_comment_text" class="add_comment_text" title="입력 하세요." placeholder="입력 하세요." rows="1" cols="40"></textarea>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div id="teamArea3">
+                       <!--<div class="jqmOverlay2" style="height: 100%; width: 100%; position: absolute; left: 0px; top: 0px; z-index: 2999; opacity: 0.5; display:block;"></div>-->
+                       <a href="#" id="teamMakeStart0" class="button2" >팀 그룹 생성</a>
+                       <a href="#" id="teamMakeStart1" class="button2" >팀 편성</a>
+                        <!--<a href="#" id="teamMakeStart2" class="button2" >나머지 멤버 배정</a>-->
+                        <a href="#" id="teamMakeStart3" class="button2" >팀 초기화</a>
+                        <!--<a href="#"></a>-->
+                    </div> 
+                </div> 
+              
+            </div>
+        </div>
+    <script type="text/javascript" src="/javascripts/teamMake.js"></script> 
+</body>
+</html>

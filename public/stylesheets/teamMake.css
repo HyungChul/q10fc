@@ -1,0 +1,514 @@
+﻿@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: none;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    text-align: left;
+    line-height: 1;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    /*background:#e3e7e8 url(http://imgnews.naver.net/image/sports/2011/live_center_worldfootball/bg_live_center.png) 0 0 repeat-x;*/
+    background: url("http://p1.pichost.me/i/15/1380305.jpg") top center;
+}
+
+#div787 {
+    display: block;
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    width: 200px;
+    margin: 0 0 0 -100px;
+    padding: 12px;
+    border: 1px solid black;
+    background-color: #eee;
+    color: #333;
+    z-index: 3000;
+}
+
+.jqmOverlay {
+    background-color: #000;
+}
+
+.jqmOverlay2 {
+    background-color: #000;
+}
+#allWrap {
+/*position: fixed;
+z-index: 100;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+background: #000;*/
+}
+
+.all {
+    max-width: 650px;
+    min-width: 650px;
+    margin: auto;
+    /*margin: 20px 0 20px 0;*/
+}
+
+.header {
+    background-color: orange;
+}
+.main {
+    background-color: #fff;
+}
+.footer {
+    background-color: green;
+}
+div {
+    font-size: 1em;
+}
+
+.header, .main, .footer,img {
+    width: 100%;
+}
+
+body　{
+    margin: 0;
+    color: #3c3c3c;
+    line-height: 1.5;
+    
+}
+
+.wrap {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    font-family: "돋움", Dotum, Arial, sans-serif;  
+    background-color: #fff;
+       /*border: 1px solid #e0e0e0;*/
+    /* Opera */
+    /*box-shadow:5px 5px 5px silver;*/
+
+    /* Firefox */
+    /*-moz-box-shadow:5px 5px 5px silver;*/
+
+    /* Safiri, Chrome */
+    /*-webkit-box-shadow: 1px 1px 2px #eee;*/ 
+}
+
+
+#teamArea {
+    /*background-color: #eee;*/
+    width: 100%;
+    height: 310px;
+    text-align: center;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.teamArea2 {
+    padding: 5px 0 5px 0;
+    /*background-color: #fff;*/
+    width: 100%;
+    height: 330px;
+}
+
+#teamLeftArea {
+  position: relative;
+  float: left;
+  width: 200px;
+  background-color: #fff;
+   border: 1px solid #e0e0e0;
+    /* Opera */
+    /*box-shadow:5px 5px 5px silver;*/
+
+    /* Firefox */
+    /*-moz-box-shadow:5px 5px 5px silver;*/
+
+    /* Safiri, Chrome */
+    -webkit-box-shadow: 2px 2px 4px #eee;
+}
+
+
+#teamRightArea {
+  position: relative;
+  float: right;
+  width: 430px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+    /* Opera */
+    /*box-shadow:5px 5px 5px silver;*/
+
+    /* Firefox */
+    /*-moz-box-shadow:5px 5px 5px silver;*/
+
+    /* Safiri, Chrome */
+    -webkit-box-shadow: 0px 2px 4px #eee;
+}
+
+#inputCommentArea {
+    /*padding: 3px;*/
+}
+
+#inputCommentArea textarea{
+	resize: none;
+	overflow: auto;
+	width: 300px;
+}
+
+
+.add_comment_text {
+ font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+ font-size: 0.8em;
+ color: #141823;
+ line-height: 17px;    
+ margin: 10px;    
+}
+
+ .privateImage2 {
+    position: relative;
+    float: left;
+}
+
+#chatArea {
+ font-family: "Nanum Gothic", sans-serif;  
+ font-size: 0.8em;
+ position: relative;
+ float:left;
+ background-color: #fff;
+ margin: 5px;
+ width: 300px;
+ height: 250px;
+  border: 1px solid #e0e0e0;
+ overflow:auto;
+}
+
+#chatMemberList {
+ font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+ font-size: 0.9em;
+ position: relative;
+ float:left;
+ width: 100px;
+  height: 250px;
+ overflow: auto;
+ background-color: #fff;
+ border: 1px solid #e0e0e0;
+ margin: 5px 0 0 10px;
+}
+
+.chatList {
+    margin:3px;
+}
+
+.chatList li {
+     line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.gameOnList {
+    margin:3px;
+}
+
+.gameOnList li {
+     line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.add_member {
+ font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+ font-size: 0.8em;
+ color: #141823;
+ line-height: 17px;    
+ margin: 10px;
+ width: 100px;
+}
+
+#memberView {
+ font-family: "Nanum Gothic", sans-serif; 
+ font-size: 0.9em; 
+ background-color: #fff;
+ margin: 5px;
+ height: 250px;
+ overflow: auto;
+ border: 1px solid #e0e0e0;
+}
+
+.memberViewTitle {
+ margin: 5px 5px 10px 5px;
+}
+
+#teamArea3 {
+    position:relative;
+    margin-top: 10px;    
+    width: 100%;
+    height: 50px;
+    /*margin-bottom: 30px;*/  
+    text-align: center;  
+}
+
+.ListTitle {
+ font-size: 0.9em;
+ font-weight: bold;
+ padding: 5px;
+}
+
+.teamSelect {
+background: #000; /* Chrome,Safari4+ */
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin-right: 16px;
+        color: #fff;   
+   border: 1px solid #e0e0e0;
+    /* Opera */
+    /*box-shadow:5px 5px 5px silver;*/
+
+    /* Firefox */
+    /*-moz-box-shadow:5px 5px 5px silver;*/
+
+    /* Safiri, Chrome */
+    -webkit-box-shadow: 10px 10px 10px #eee; 
+    display: none;
+}
+
+.teamSelect dt {
+    font-family: "Nanum Gothic Coding", sans-serif;    
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 10px 15px 10px;
+    text-align: center;    
+}
+
+.teamSelect dd {
+    font-family: "Nanum Gothic Coding", sans-serif; 
+    font-size: 1.5em;
+    line-height: 1.1;
+    margin: 10px;
+    text-align: center;
+    display: none;
+}
+#lean_overlay {
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+	background: #000;
+	display: none;
+}
+
+
+.modal_close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url('https://dl.dropbox.com/u/59384927/jquery/HTML/MODAL/leanmodal/1.1/modal_close.png');
+	z-index: 2;
+}
+
+#memberName input {
+    padding: 5px;
+}
+
+.errorMsg {
+    margin-top: 10px;
+    color: red;
+    font-family: '돋움',dotum,'Apple SD Gothic Neo'; 
+    font-size: 0.9em;
+}
+
+.chatMemberNametList {
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+.sukudai {
+    color: red;
+}
+
+.chatName {
+    font-weight: bold;
+}
+
+.chatNameStart {
+    font-weight: bold;
+    color: blue;
+}
+
+.chatNameDiscon {
+    font-weight: bold;
+    color: red;
+}
+
+#selectTable {
+    margin: 10px 5px 10px 5px;
+     border: 4px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.selectTd1 {
+    font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+    font-size: 0.8em;
+    padding: 0px;
+     vertical-align: middle;
+}
+
+.selectTd2 {
+    vertical-align: middle;
+}
+
+#selectDiv {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    position: absolute;
+    /*top: -1px;*/
+    display: none;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    z-index: 99;
+    padding: 3px;
+     font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+    font-size: 0.9em;
+    cursor: pointer;
+
+}
+
+#qoo10fcMemberList {
+    position: relative;
+    float: left;
+    width: 55%;
+    overflow: auto;
+    height: inherit;
+}
+
+#memberBtn {
+    width: 40%;
+    position: relative;
+    float: left;
+    /*padding: 50% 0%;*/   
+    height: inherit;
+    /*margin-right: 10px;*/
+}
+
+a.button {
+    /*padding: .3em .6em;*/
+    font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+    font-size: 0.9em;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.4) inset;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #000 !important;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px;
+    display: block;
+}
+
+.gameOnList li {
+     font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+    font-size: 1em;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.4) inset;
+     background-color: #333;
+    color: #fff;
+    border: 1px solid #000 !important;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gameOnList li:hover
+{
+    box-shadow: 0 2px 1px rgba(255,255,255,0.3),1px 1px 1px rgba(0,0,0,0.4) inset;
+    background-color: #F2F2F2;
+    color: #000;
+    border: 1px solid #fff !important;
+}
+
+.gameOnList li.selected
+{
+    box-shadow: 0 2px 1px rgba(255,255,255,0.3),1px 1px 0 rgba(0,0,0,0.4) inset;
+    background-color: #F2F2F2;
+    color: #000;
+    border: 1px solid #fff !important;
+    background: #e9e9e9 url("http://staticssl.image-gmkt.com/qoo10/front/cm/common/image/address/cm_addr.png?140919") -260px -580px no-repeat;
+}
+
+.check1 {
+   margin-left: 5px;
+    position: relative;
+    /*background-image: url('images/slides/background.jpg');*/
+}
+
+#teamMakingView {
+    text-align: center;
+}
+
+a.button2 {
+    /*padding: .3em .6em;*/
+    font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+    font-size: 0.9em;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.4) inset;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #000 !important;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+    text-align: center;
+    width: 25%;
+    margin-right: 10px;
+}
+
+a.button3 {
+    /*padding: .3em .6em;*/
+    font-family: '돋움',dotum,'Apple SD Gothic Neo';  
+    font-size: 0.8em;
+    /*box-shadow: 0 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.4) inset;*/
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0,0,0,0.3) !important;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 2px;
+    display: inline;
+    text-align: right;
+    margin-left: 20px;
+    width: 10px;
+}
+
+.futsalHeadImg {
+    text-align:center;
+    width: 650px;
+    height: 100px;
+    background-size: 100px;
+    border: 1px solid #fff !important;
+     background: #e9e9e9 url("http://dp.image-gmkt.com/SG/design/2014/06/mobile/0625-mameq-worldcup-combo2b.jpg?45") -100px -100px  no-repeat;
+}
+
+.clear {
+    clear: both;
+}
